@@ -1,11 +1,12 @@
 import { useState } from "react";
 import "./App.css";
 import ExampleWithRender from "./components/ExampleWithRender";
-import Counter from "./components/CounterManager";
+import Counter from "./components/CounterManager/CounterManager";
 
 function App() {
   const [counterParent, setCounterParent] = useState(0);
   console.log("Rerendering App");
+
   return (
     <div
       style={{

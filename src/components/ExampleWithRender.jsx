@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import useScreenSize from "../hooks/useScreenSize";
-import Counter from "./CounterManager";
+import Counter from "./CounterManager/CounterManager";
 
 export default function ExampleWithRender({ counterParent = 0 }) {
   const [counterChild, setCounterChild] = useState(0);
