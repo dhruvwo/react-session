@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import ExampleWithRender from "./components/ExampleWithRender";
 import Counter from "./components/CounterManager/CounterManager";
+import HOCExample from "./components/HOC/HOCExample";
 
 function App() {
   const [counterParent, setCounterParent] = useState(0);
@@ -21,6 +22,8 @@ function App() {
         counter={counterParent}
       />
       <ExampleWithRender counterParent={counterParent} />
+      {/* TODO: for HOC example */}
+      {/* <HOCExample /> */}
     </div>
   );
 }

@@ -36,7 +36,7 @@ export default function ExampleWithRender({ counterParent = 0 }) {
           counter={counterChild}
         />
       </div>
-      Sum of counters: {sum}
+      <div>Sum of counters: {sum}</div>
     </>
   );
 }
