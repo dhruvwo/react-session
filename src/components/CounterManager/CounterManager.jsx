@@ -1,26 +1,25 @@
-import { useEffect, useRef } from "react";
 import styles from "./CounterManager.module.css";
 
-let letCounter = 100;
+// let letCounter = 100;
 export default function Counter({ label, counter = 0, setCounter }) {
-  const refCounter = useRef(100);
-  useEffect(() => {
-    const interval = setInterval(
-      () => {
-        if (label === "Child") {
-          letCounter += 10;
-          refCounter.current += 10;
-        } else {
-          letCounter = 100;
-          refCounter.current = 100;
-        }
-      },
-      label === "Child" ? 1000 : 5000
-    );
-    return () => {
-      clearInterval(interval);
-    };
-  }, [label]);
+  // const refCounter = useRef(100);
+  // useEffect(() => {
+  //   const interval = setInterval(
+  //     () => {
+  //       if (label === "Child") {
+  //         letCounter += 10;
+  //         refCounter.current += 10;
+  //       } else {
+  //         letCounter = 100;
+  //         refCounter.current = 100;
+  //       }
+  //     },
+  //     label === "Child" ? 1000 : 5000
+  //   );
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, [label]);
 
   return (
     <div
