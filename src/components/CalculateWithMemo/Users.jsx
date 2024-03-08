@@ -1,5 +1,3 @@
-import React from "react";
-
 const UserNames = ({ userNames, addUser }) => {
   console.log("***************UserNames rerendering...");
   return (

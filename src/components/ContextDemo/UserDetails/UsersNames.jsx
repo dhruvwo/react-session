@@ -1,4 +1,4 @@
-import { useCallback, useContext, useMemo } from "react";
+import { useCallback, useContext } from "react";
 import ComponentWrapper from "../../ComponentWrapper/ComponentWrapper";
 import { UsersContext } from "../../../contexts/UsersProvider";
 import { ThemeContext } from "../../../contexts/ThemeProvider";

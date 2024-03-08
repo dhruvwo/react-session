@@ -1,4 +1,3 @@
-import React from "react";
 import UsersNames from "./UsersNames";
 import ComponentWrapper from "../../ComponentWrapper/ComponentWrapper";
 import UsersTable from "./UsersTable";
