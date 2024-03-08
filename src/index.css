@@ -66,3 +66,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+td,
+th,
+table {
+  border: 1px solid white;
+}
+
+td,
+th {
+  min-width: 100px;
+}

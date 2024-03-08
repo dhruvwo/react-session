@@ -1,3 +1,4 @@
+import ComponentWrapper from "../ComponentWrapper/ComponentWrapper";
 import styles from "./CounterManager.module.css";
 
 // let letCounter = 100;
@@ -22,18 +23,7 @@ export default function Counter({ label, counter = 0, setCounter }) {
   // }, [label]);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        gap: 5,
-        border: "1px solid white",
-        height: 250,
-        width: 400,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <ComponentWrapper label={`${label} Section`}>
       <h2>{label} Section</h2>
       {/* TODO: REF Concept
       <div>letCounter: {letCounter}</div>
@@ -55,6 +45,6 @@ export default function Counter({ label, counter = 0, setCounter }) {
           +
         </button>
       </div>
-    </div>
+    </ComponentWrapper>
   );
 }

@@ -1,12 +1,11 @@
-import { useState } from "react";
 import "./App.css";
-import ExampleWithRender from "./components/ExampleWithRender";
-import Counter from "./components/CounterManager/CounterManager";
-// import HOCExample from "./components/HOC/HOCExample";
+import ContextDemo from "./components/ContextDemo/ContextDemo";
+// import CalculateWithMemo from "./components/CalculateWithMemo/CalculateWithMemo";
+// import LifeCycleConcept from "./components/LifecycleConcept/LifeCycleConcept";
+import { ThemeProvider } from "./contexts/ThemeProvider";
 
 function App() {
-  const [counterParent, setCounterParent] = useState(0);
-  console.log("Rerendering App");
+  console.log("***************App rerendering...");
 
   return (
     <div
@@ -16,14 +15,11 @@ function App() {
         gap: 8,
       }}
     >
-      <Counter
-        label={"Parent"}
-        setCounter={setCounterParent}
-        counter={counterParent}
-      />
-      <ExampleWithRender counterParent={counterParent} />
-      {/* TODO: for HOC example */}
-      {/* <HOCExample /> */}
+      <ThemeProvider>
+        {/* <CalculateWithMemo /> */}
+        {/* <LifeCycleConcept /> */}
+        <ContextDemo />
+      </ThemeProvider>
     </div>
   );
 }
