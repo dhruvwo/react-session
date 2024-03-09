@@ -9,10 +9,12 @@ const useScreenSize = () => {
   useEffect(() => {
     let timer;
     const handleResize = () => {
+      console.log("handleResize");
       if (timer) {
         clearTimeout(timer);
       }
       timer = setTimeout(() => {
+        console.log("change state...");
         setScreenSize({
           width: window.innerWidth,
           height: window.innerHeight,

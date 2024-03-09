@@ -29,13 +29,13 @@ export default function ExampleWithRender({ counterParent = 0 }) {
   return (
     <>
       <div>Screen width: {screenWidth.width}</div>
-      <div>
+      {/* <div>
         <Counter
           label={"Child"}
           setCounter={setCounterChild}
           counter={counterChild}
         />
-      </div>
+      </div> */}
       <div>Sum of counters: {sum}</div>
     </>
   );

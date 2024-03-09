@@ -17,7 +17,7 @@ export default function CalculateWithMemo() {
     console.log("useEffect => users rerendering", users);
   }, [users]);
 
-  const userNames = useMemo(() => {
+  const userNames = useCallback(() => {
     console.log("useMemo => userNames called");
     return users.map((user) => user.name).join(", ");
   }, [users]);
@@ -35,6 +35,9 @@ export default function CalculateWithMemo() {
     ]);
   }, []);
 
+  useEffect(() => {
+    addUser();
+  }, [addUser]);
   return (
     <div
       style={{

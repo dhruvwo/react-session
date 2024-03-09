@@ -32,10 +32,10 @@ export function generateRandomId(length = 4) {
   return randomId;
 }
 
-export function generateListItems() {
+export function generateListItems(length = 100) {
   const list = [];
 
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < length; i++) {
     list.push({
       id: generateRandomId(),
       name: getNewName(),

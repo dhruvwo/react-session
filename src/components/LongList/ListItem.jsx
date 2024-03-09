@@ -3,7 +3,7 @@ import useOnScreen from "../../hooks/useOnScreen";
 
 const ListItem = ({ item }) => {
   const itemRef = useRef();
-  const isVisible = useOnScreen(itemRef, "-100px");
+  const isVisible = useOnScreen(itemRef);
   return (
     <div
       ref={itemRef}
