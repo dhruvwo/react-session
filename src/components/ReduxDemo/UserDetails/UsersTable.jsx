@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 
 const UsersTable = () => {
   const users = useSelector((state) => state.users.users);
+  console.log("***************UsersTable rerendering...", users);
   return (
     <ComponentWrapper label={`User Table Section`}>
       <table>

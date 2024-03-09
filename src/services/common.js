@@ -31,3 +31,15 @@ export function generateRandomId(length = 4) {
   }
   return randomId;
 }
+
+export function generateListItems() {
+  const list = [];
+
+  for (let i = 0; i < 100; i++) {
+    list.push({
+      id: generateRandomId(),
+      name: getNewName(),
+    });
+  }
+  return list;
+}

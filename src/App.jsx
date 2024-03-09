@@ -1,8 +1,9 @@
 import "./App.css";
-import ReduxDemo from "./components/ReduxDemo/ReduxDemo";
-// import ContextDemo from "./components/ContextDemo/ContextDemo";
-// import CalculateWithMemo from "./components/CalculateWithMemo/CalculateWithMemo";
+import CalculateWithMemo from "./components/CalculateWithMemo/CalculateWithMemo";
+import LongList from "./components/LongList/LongList";
 // import LifeCycleConcept from "./components/LifecycleConcept/LifeCycleConcept";
+// import ContextDemo from "./components/ContextDemo/ContextDemo";
+// import ReduxDemo from "./components/ReduxDemo/ReduxDemo";
 import { ThemeProvider } from "./contexts/ThemeProvider";
 
 function App() {
@@ -19,8 +20,9 @@ function App() {
       <ThemeProvider>
         {/* <CalculateWithMemo /> */}
         {/* <LifeCycleConcept /> */}
+        <LongList />
         {/* <ContextDemo /> */}
-        <ReduxDemo />
+        {/* <ReduxDemo /> */}
       </ThemeProvider>
     </div>
   );
